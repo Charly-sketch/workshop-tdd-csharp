@@ -14,19 +14,19 @@ public class HelloWorldTest
         HelloWorld.Hello("").Should().Be("Hello, World!");
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Test_hello_with_no_name_should_return_helloworld()
     {
         HelloWorld.Hello(null).Should().Be("Hello, World!");
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Test_hello_should_return_hello_alice_when_alice()
     {
         HelloWorld.Hello("Alice").Should().Be("Hello, Alice!");
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Test_hello_should_return_hello_bob_when_bob()
     {
         HelloWorld.Hello("Bob").Should().Be("Hello, Bob!");
